@@ -1,0 +1,26 @@
+server:
+  port: 7200
+spring:
+  application:
+    name: sharding-search-demo-db
+  config:
+    import:
+      - optional:nacos:mybatis-plus.yml
+      - optional:nacos:db.yml
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+        namespace: ca0e5a58-18ad-4603-bafb-1bfe28d914d1
+      config:
+        username: nacos
+        password: nacos
+        context-path: /nacos
+        server-addr: localhost:8848
+        namespace: ca0e5a58-18ad-4603-bafb-1bfe28d914d1
+
+
+
+
