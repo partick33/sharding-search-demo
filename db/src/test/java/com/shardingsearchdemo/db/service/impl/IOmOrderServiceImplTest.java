@@ -67,4 +67,11 @@ class IOmOrderServiceImplTest {
         OmsOrder omsOrder = omOrderService.searchOne(wrapper);
         log.info(omsOrder.toString());
     }
+
+    @Test
+    void searchTop(){
+        IOmOrderService omOrderService = SpringUtils.getBean(IOmOrderService.class);
+        List<OmsOrder> omsOrders = omOrderService.searchTop(new QueryWrapper<>());
+        log.info(omsOrders.toString());
+    }
 }

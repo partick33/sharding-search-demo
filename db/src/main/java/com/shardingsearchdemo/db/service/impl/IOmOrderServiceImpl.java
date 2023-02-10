@@ -39,4 +39,9 @@ public class IOmOrderServiceImpl extends ServiceImpl<OmsOrderMapper, OmsOrder> i
     public OmsOrder searchOne(QueryWrapper<OmsOrder> queryWrapper) {
         return omsOrderMapper.selectOne(queryWrapper);
     }
+
+    @Override
+    public List<OmsOrder> searchTop(QueryWrapper<OmsOrder> queryWrapper) {
+        return omsOrderMapper.searchTop();
+    }
 }

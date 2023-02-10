@@ -17,4 +17,6 @@ public interface IOmOrderService {
     Long searchCount();
 
     OmsOrder searchOne(QueryWrapper<OmsOrder> queryWrapper);
+
+    List<OmsOrder> searchTop(QueryWrapper<OmsOrder> queryWrapper);
 }

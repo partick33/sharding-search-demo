@@ -4,6 +4,8 @@ package com.shardingsearchdemo.db.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.shardingsearchdemo.db.entity.OmsOrder;
 
+import java.util.List;
+
 /**
  * <p>
  * 订单表 Mapper 接口
@@ -14,4 +16,5 @@ import com.shardingsearchdemo.db.entity.OmsOrder;
  */
 public interface OmsOrderMapper extends BaseMapper<OmsOrder> {
 
+    List<OmsOrder> searchTop();
 }

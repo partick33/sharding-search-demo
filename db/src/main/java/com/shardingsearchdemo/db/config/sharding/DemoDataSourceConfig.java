@@ -38,7 +38,7 @@ public class DemoDataSourceConfig{
         //开启元数据检查，默认关闭，建议开启，可以检查自己的表达式是否跟表名对应得上
         prop.put("check-table-metadata-enabled", true);
         //简化sql
-        prop.put("sql-simple",true);
+        //prop.put("sql-simple",true);
         return ShardingSphereDataSourceFactory.createDataSource(databaseName, modeConfiguration, dataSources, Collections.singleton(createShardingRuleConfiguration()), prop);
     }
 
